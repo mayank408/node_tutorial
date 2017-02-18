@@ -9,9 +9,10 @@ app.get('/',function(req , res){
 
 })
 
-app.get('/contact',function(req , res){
+app.get('/contacts',function(req , res){
 
-	res.send('This is the contact page')
+	console.log('contacts open')
+	res.render('contacts');
 
 })
 
