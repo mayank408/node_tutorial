@@ -12,8 +12,8 @@ app.get('/',function(req , res){
 
 app.get('/contacts',function(req , res){
 
-	console.log('contacts open')
-	res.render('contacts');
+
+	res.render('contacts', {qs: req.query});
 
 })
 
